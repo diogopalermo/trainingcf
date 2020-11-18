@@ -9,6 +9,8 @@ type STATUS_TYPE : String(1) enum {
 
 
 entity Base: cuid, managed{
+    key ID : UUID @odata.Type:'Edm.String';
+
 }
 
 entity withTemporal{
